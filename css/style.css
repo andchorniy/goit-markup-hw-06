@@ -246,7 +246,6 @@ body {
 .modal-label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -280,6 +279,7 @@ body {
 }
 .form-item {
   position: relative;
+  margin-bottom: 10px;
 }
 .modal-icon {
   position: absolute;
@@ -551,10 +551,15 @@ footer {
   padding-bottom: 60px;
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+}
+.footer-block:not(:last-child) {
+  margin-right: 30px;
 }
 .connect {
-  margin-left: 70px;
+  width: 270px;
+}
+.address-block {
+  width: 270px;
 }
 .secondary-logo {
   color: var(--primary-white-color);
@@ -617,9 +622,7 @@ footer {
 .connect .social-button:focus .button-icon {
   fill: var(--primary-white-color);
 }
-.subscribe {
-  margin-left: 93px;
-}
+
 .subscribe .form-button {
   display: flex;
   align-items: center;
